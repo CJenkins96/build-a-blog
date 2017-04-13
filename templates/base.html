@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blog!</title>
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+                width: 800px;
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+            ul li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>blog!</h1>
+        <ul>
+            <a href="/blog"><li>Home</li></a>
+            <a href="/newpost"><li>New Post</li></a>
+            <a href="/allposts"><li>All Posts</li></a>
+        </ul>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
